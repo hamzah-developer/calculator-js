@@ -8,9 +8,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 20px;
-  padding: 40px 0px;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  /* padding: 40px 0px; */
   }
   
   .div1 { grid-area: 1 / 1 / 2 / 2; }
@@ -35,4 +35,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
   }  
