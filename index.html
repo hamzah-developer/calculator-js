@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/resources/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/resources/js/app.js"></script>
   <title>Calculator JS</title>
 </head>
 
 <body class="bg-gradient-to-r from-emerald-500 to-lime-600">
-  
   <div class="min-h-screen flex items-center justify-center">
     <div class="">
       <div class="w-[340px] lg:w-[600px] xl:w-[900px] mx-auto">
@@ -18,11 +18,11 @@
           0
         </div>
 
-        <div class="parent w-full bg-gray-100">
-          <button class="div1 bg-gray-200">+</button>
-          <button class="div2 bg-gray-200">-</button>
-          <button class="div3 bg-gray-200">x</button>
-          <button class="div4 bg-gray-200">&#247;</button>
+        <div class="parent calculator_keys w-full bg-gray-100">
+          <button class="div1 bg-gray-200" data-action="add">+</button>
+          <button class="div2 bg-gray-200" data-action="subtract">-</button>
+          <button class="div3 bg-gray-200" data-action="multiply">x</button>
+          <button class="div4 bg-gray-200" data-action="divide">&#247;</button>
           <button class="div5 bg-white">7</button>
           <button class="div6 bg-white">8</button>
           <button class="div7 bg-white">9</button>
@@ -33,18 +33,13 @@
           <button class="div12 bg-white">2</button>
           <button class="div13 bg-white">3</button>
           <button class="div14 bg-white">0</button>
-          <button class="div15 bg-white">.</button>
-          <button class="div16 bg-white">C</button>
-          <button class="div17 bg-orange-400">=</button>
+          <button class="div15 bg-white" data-action="decimal">.</button>
+          <button class="div16 bg-white" data-action="clear">AC</button>
+          <button class="div17 bg-orange-400" data-action="calculate">=</button>
         </div>
       </div>
     </div>
   </div>
-  
-
-
-
-
 </body>
 </html>
 
