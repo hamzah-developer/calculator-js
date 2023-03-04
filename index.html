@@ -6,17 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/resources/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="/resources/js/app.js"></script>
+  <script src="/resources/js/app.js" defer></script>
   <title>Calculator JS</title>
 </head>
 
 <body class="bg-gradient-to-r from-emerald-500 to-lime-600">
-  <div class="min-h-screen flex items-center justify-center">
-    <div class="">
+  <div class= "min-h-screen flex items-center justify-center">
+    <div class="calculator">
       <div class="w-[340px] lg:w-[600px] xl:w-[900px] mx-auto">
-        <div class="bg-white h-full w-full calculator_display flex justify-end items-center text-black p-[20px]">
-          0
-        </div>
+        <div class="bg-white h-full w-full calculator_display flex justify-end items-center text-black p-[20px]">0</div>
 
         <div class="parent calculator_keys w-full bg-gray-100">
           <button class="div1 bg-gray-200" data-action="add">+</button>
