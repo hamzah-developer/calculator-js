@@ -9,6 +9,8 @@ keys.addEventListener('click', e => {
    const displayedNum = display.textContent
    const keyContent = key.textContent
 
+   Array.from(key.parentNode.children).forEach(k => k.classList.remove('is-depressed'))
+   
    if(!action) {
     if (displayedNum === '0') {
       display.textContent = keyContent
@@ -32,10 +34,5 @@ keys.addEventListener('click', e => {
    ) {
     key.classList.add('is-depressed')
    }
-
-
-
-
-
   }
  })
